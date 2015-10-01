@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{914ab0dc-b6d0-4b8b-a5e0-51360c1ae36d}</ProjectGuid>
+    <Name>Export Info</Name>
+    <Guid>374cbad6-ee46-4478-a389-d7dfc61bfd17</Guid>
+    <ModVersion>1</ModVersion>
+    <Stability>Stable</Stability>
+    <Teaser>See your buildings, wonders, policies, and religion outside the game</Teaser>
+    <Description>This is a tool for streaming. It writes data about your buildings, wonders, policies, and religion into a small database in the "ModUserData" folder. An external program can then display this info in your stream or put it in chatbot commands.</Description>
+    <Authors>Hyphen-ated</Authors>
+    <SpecialThanks>William Howard, 44rdvrk</SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>My - Changes</AssemblyName>
+    <RootNamespace>My - Changes</RootNamespace>
+    <ModReferences />
+    <ModActions>
+    </ModActions>
+    <ModContent>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>My Changes</Name>
+        <Description>My Changes</Description>
+        <FileName>LUA/ExportInfo.lua</FileName>
+      </Content>
+    </ModContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="LUA" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LUA\ExportInfo.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

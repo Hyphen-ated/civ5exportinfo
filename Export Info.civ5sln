@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Export Info", "Export Info\Export Info.civ5proj", "{914AB0DC-B6D0-4B8B-A5E0-51360C1AE36D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{914AB0DC-B6D0-4B8B-A5E0-51360C1AE36D}.Default|x86.ActiveCfg = Default|x86
+		{914AB0DC-B6D0-4B8B-A5E0-51360C1AE36D}.Default|x86.Build.0 = Default|x86
+		{914AB0DC-B6D0-4B8B-A5E0-51360C1AE36D}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{914AB0DC-B6D0-4B8B-A5E0-51360C1AE36D}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{914AB0DC-B6D0-4B8B-A5E0-51360C1AE36D}.Package Only|x86.ActiveCfg = Package Only|x86
+		{914AB0DC-B6D0-4B8B-A5E0-51360C1AE36D}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
