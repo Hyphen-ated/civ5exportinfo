@@ -42,6 +42,8 @@ function updateInfo()
 	end		
 	data.SetValue("religion", table.concat(beliefs, " "))
 
+	data.SetValue("turn", Game.GetElapsedGameTurns())
+
 end
 
 --update at the end of every turn
