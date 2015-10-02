@@ -55,8 +55,7 @@ function updateInfo()
 	for pCity in player:Cities() do				
 		for buildingId=0,numBuildings do
 			if (pCity:IsHasBuilding(buildingId)) then 
-				--there's some kind of indexing confusion with buildings, we have to subtract 1 here or the ids don't match
-				table.insert(buildings, buildingId - 1)
+				table.insert(buildings, buildingId)
 			end
 		end		
 	end
