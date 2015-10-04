@@ -27,7 +27,7 @@
         <Type>InGameUIAddin</Type>
         <Name>My Changes</Name>
         <Description>My Changes</Description>
-        <FileName>LUA/ExportInfo.lua</FileName>
+        <FileName>FrontEnd/DeclareWarMovePopup.lua</FileName>
       </Content>
     </ModContent>
   </PropertyGroup>
@@ -43,10 +43,10 @@
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="LUA" />
+    <Folder Include="FrontEnd" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LUA\ExportInfo.lua">
+    <Content Include="FrontEnd\DeclareWarMovePopup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

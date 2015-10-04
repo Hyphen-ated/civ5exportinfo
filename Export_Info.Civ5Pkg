@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ5Package>
+	<GUID>{374cbad6-ee46-4478-a389-d7dfc61bfd17}</GUID>
+	<Version>1</Version>
+	<Priority>350</Priority>
+	<PTags>
+		<Tag>Version</Tag>
+	</PTags>
+	<Name>
+		<Value language="en_US">Export Info</Value>
+	</Name>
+	<Description>
+		<Value language="en_US">Export Info</Value>
+	</Description>
+	<UISkin name="Expansion2Primary" set="Expansion2" platform="Common">
+		<Skin>
+		  <Directory>FrontEnd</Directory>
+		  <Directory>InGame</Directory>
+		</Skin>
+	</UISkin>
+
+</Civ5Package>
+

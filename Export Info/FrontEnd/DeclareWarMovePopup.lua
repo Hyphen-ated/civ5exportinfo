@@ -1,5 +1,18 @@
+-- DECLARE WAR MOVE POPUP
+-- This popup occurs when a team unit moves onto rival territory
+-- or attacks an rival unit
+PopupLayouts[ButtonPopupTypes.BUTTONPOPUP_DECLAREWARMOVE] = nil;
+
+----------------------------------------------------------------        
+-- Key Down Processing
+----------------------------------------------------------------        
+PopupInputHandlers[ButtonPopupTypes.BUTTONPOPUP_DECLAREWARMOVE] = nil;
+
+
+-- In order to make the Export Info mod work in multiplayer, it seems we needed to attach it to an existing file
+-- So we chose "DeclareWarMovePopup" because of how trivial it is and how it doesnt seem to be changed by any other mods.
 --
--- write info to a sqlite database at the following path:
+-- This writes info to a sqlite database at the following path:
 -- Documents\My Games\Sid Meier's Civilization 5\ModUserData\exported streaming info-1.db
 -- it contains lists of the building IDs in each of your cities, your policy IDs, and your belief IDs
 print("loaded Export Info Mod")
